@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141B41; /* Dark Blue Background */
+    color: white; /* White Text for Contrast */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: #141B41; /* Dark Blue Header */
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+    border-bottom: 3px solid #306BAC; /* Light Blue Border */
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #6F9CEB; /* Softer Blue for Links */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #306BAC; /* Light Blue on Hover */
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    padding: 2em;
+    background-color: #1A2C59; /* Slightly Darker Blue Background for Main Content */
+    color: white;
+}
+
+h1, h2 {
+    margin-bottom: 0.5em;
+    color: #6F9CEB; /* Softer Blue for Headings */
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #141B41; /* Dark Blue Footer */
+    color: white;
+    border-top: 3px solid #306BAC; /* Light Blue Border */
+}
+
+textarea {
+    resize: none;
+    vertical-align: text-top;
+    
+    font-size: x-large;
+    font-family: monospace;
+    background-color: black;
+    color: limegreen;
+
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Additional Styling */
+button {
+    background-color: #306BAC; /* Light Blue for Buttons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6F9CEB; /* Softer Blue on Hover */
+}
+
+/* Dark mode button (if needed later) */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #306BAC; /* Light Blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #6F9CEB; /* Softer Blue on Hover */
+}
+
+
+td.bitmap {
+    border: 1px solid #000000;
+    color: #000000;
+    text-align: center;
+    background-color: #ff0000;
+    cursor: pointer;
+}
+
+td.bit-on {
+    background-color: #00ff00;
+}
+
+.io-area {
+    width: 800px;
+    height: 200px;
+}
+
+.bitmap {
+    text-transform: uppercase;
+}
+
+
+aside {
+    width: 60%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+}
+
+.align-top {
+    align-content: start;
+}
+
+

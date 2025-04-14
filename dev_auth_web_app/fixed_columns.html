@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Columns</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts/fixed_columns.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Fixed Columns</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fixed_columns.html">Fixed Columns</a></li>
+                <li><a href="hex_in_plan.html">Hex in Plan</a></li>
+                <li><a href="iso_builder.html">ISO Builder</a></li>
+                <li><a href="visual_bitmap.html">Visual Bitmap</a></li>
+                <li><a href="manuals.html">Manuals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Fixed Columns</h2>
+            <p>set the input and the number of columns needed to format the data</p>
+        </section>
+        <section>
+            <table>
+                <tr>
+                    <td class="align-top"><label for="input-area">input</label></td>
+                    <td><textarea id="input-area" class="io-area"></textarea></td>
+                    <td class="align-top"><label for="columns">columns</label></td>
+                    <td class="align-top"><textarea id="columns"cols="3" resize="none"></textarea></td>
+                </tr>
+                <tr>
+
+                </tr>
+                    <label for="keep-new-line">keep new line (\n) from input</label><input id="keep-new-line" type="checkbox">
+                <tr>
+                    <td class="align-top"><label for="output-area">output</label></td>
+                    <td><textarea id="output-area" class="io-area" readonly></textarea></td>
+                </tr>
+            </table>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Simple Website</p>
+    </footer>
+</body>
+</html>

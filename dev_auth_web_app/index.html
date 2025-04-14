@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Simple Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fixed_columns.html">Fixed Columns</a></li>
+                <li><a href="hex_in_plan.html">Hex in Plan</a></li>
+                <li><a href="iso_builder.html">ISO Builder</a></li>
+                <li><a href="visual_bitmap.html">Visual Bitmap</a></li>
+                <li><a href="manuals.html">Manuals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>Welcome to our website. Explore the different pages using the navigation links above. Each page contains valuable resources for various tasks and tools.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Simple Website</p>
+    </footer>
+
+    <script>
+        // Check for the saved theme preference in localStorage and apply it
+        window.addEventListener('DOMContentLoaded', () => {
+            const darkMode = localStorage.getItem('dark-mode');
+            
+            if (darkMode === 'enabled') {
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.remove('dark-mode');
+            }
+        });
+
+        // Toggle dark mode when the user clicks anywhere (this can be replaced with a button or other trigger)
+        document.body.addEventListener('click', () => {
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            if (isDarkMode) {
+                document.body.classList.remove('dark-mode');
+                localStorage.setItem('dark-mode', 'disabled');
+            } else {
+                document.body.classList.add('dark-mode');
+                localStorage.setItem('dark-mode', 'enabled');
+            }
+        });
+    </script>
+</body>
+</html>

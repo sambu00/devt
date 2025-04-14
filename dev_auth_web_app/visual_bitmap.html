@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Bitmap</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts/bitmap_page.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Visual Bitmap</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fixed_columns.html">Fixed Columns</a></li>
+                <li><a href="hex_in_plan.html">Hex in Plan</a></li>
+                <li><a href="iso_builder.html">ISO Builder</a></li>
+                <li><a href="visual_bitmap.html">Visual Bitmap</a></li>
+                <li><a href="manuals.html">Manuals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Visual Bitmap Overview</h2>
+            <p>Click on the table below to switch on/off each data element. Alternatively set the hexadecimal value on the textares</p>
+        </section>
+        <section>
+            <div>
+                <aside>
+                    <table>
+                        <tr>
+                            <td><label>plan hex</label></td>
+                            <td><textarea id="hexp_bitmap1" class="bitmap" rows="1" cols="16" maxlength="16" minlength="16"></textarea></td>
+                            <td><textarea id="hexp_bitmap2" class="bitmap" rows="1" cols="16" maxlength="16" minlength="16"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label>HI order</label></td>
+                            <td><textarea id="hexhi_bitmap" class="bitmap" rows="1" cols="16" maxlength="16" minlength="16"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label>LO order</label></td>
+                            <td><textarea id="hexlo_bitmap" class="bitmap" rows="1" cols="16" maxlength="16" minlength="16"></textarea></td>
+                        </tr>
+                    </table>                
+                </aside>
+                <table id="bitmap_table" class="bitmap"></table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Simple Website</p>
+    </footer>
+</body>
+</html>
